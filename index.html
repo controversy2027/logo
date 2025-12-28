@@ -1,11 +1,566 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Controversy Logo</title>
-</head>
-<body>
-    <img src="controversy2027/logo/___20251227_165332_0000.png"
-         alt="Controversy Logo">
-</body>
-</html>
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+<meta charset="UTF-8" />  
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+<title>Controversy</title>  
+<!-- Google tag (gtag.js) --><!-- Google Tag Manager -->  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],  
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=  
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  
+})(window,document,'script','dataLayer','GTM-T4DRRX2H');</script>  
+<!-- End Google Tag Manager -->  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>  <script>  
+  window.dataLayer = window.dataLayer || [];  
+  function gtag(){dataLayer.push(arguments);}  
+  gtag('js', new Date());  
+  
+  gtag('config', 'G-XXXXXXXXXX');  
+</script> 
+</head>  
+<style>  
+    body {  
+        margin: 0;  
+        background: white;  
+        font-family: Arial, sans-serif;  
+        text-align: center;  position: relative;  
+    overflow-x: hidden;  
+
+    
+  }  
+a {  
+    text-decoration-line:none;  
+    font-size:18px;  
+    color:green;  
+      
+}  
+a:link {  
+ color:blue;  
+}  
+
+  /* visited link */  
+a:visited {  
+  color:red;  
+   
+ }  
+
+  /* mouse over link */  
+a:hover {  
+   color: ;  
+  }  
+
+   /* selected link */  
+a:active {  
+   color: ;  
+   }  
+  
+.buffer{  
+    position: relative;  
+    margin:30px,auto,10px,auto;  
+    padding:5px;  
+    align-items: top;  
+    vertical-align: top;  
+}  
+  
+.content {  
+    position: relative;  
+    margin: 5px 15px 5px 15px;  
+    padding: 10px;  
+}  
+
+/* Background image stays fully visible */  
+.parent-element::before {  
+    content: "";  
+    position: fixed;  
+    top: 0; left: 0;  
+    width: 100%; height: 100%;  
+    background-image: url("");  
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    opacity: 0.08;  
+    z-index: -1;  
+}  
+/* Transparent yellow box */  
+.background {
+    /* transparent yellow → light green → darker green */
+    background: linear-gradient(
+        to top,
+        rgba(0, 255, 0, 0.0) 0%,      /* top transparent */
+        rgba(0, 120, 0, 0.35) 10%,      /* middle soft green */
+        rgba(0, 0, 0, 0.55) 100%      /* bottom stronger green */
+    );
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: 3px solid #000;
+    position: relative;
+    min-height: 350px;
+}
+.name-row {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+margin-top: 10px;
+}
+
+/* Fix star styling */
+#bookmarkBtn {
+font-size: 32px;
+cursor: pointer;
+color: blue;
+transition: color 0.3s ease;
+}
+
+#bookmarkBtn.active {
+color: gold;
+}
+
+/* Name styling */
+.name-title {
+margin: 0;
+color: hsl(195, 100%, 60%);
+font-weight: bold;
+font-size: 30px;
+-webkit-text-stroke: 1px black;
+}
+
+/* MAIN PAGE */
+#main-page {
+position: absolute;
+width: 100%;
+height: 100%;
+transition: transform 0.4s ease;
+}
+
+/* downline page styles */
+.downline-page {
+margin: 0 auto;
+width: 90%;
+height: 100px;
+border-radius: 12px;
+color: white;
+display: flex;
+align-items: center;
+padding: 10px;
+}
+
+/* Corner buttons */  
+.page-back,  
+.page-forward {  
+    width: 45px;  
+    max-width:50px;  
+    max-height:35px;  
+    height: 25px;  
+    background: ;  
+    border-radius: 10px;  
+    color: #000;  
+    font-weight: bold;  
+    border: 3px solid #000;  
+    cursor: pointer;  
+    user-select: none;  
+    position: absolute;  
+    top: 15px;  
+    font-size: 26px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    z-index: 5;  
+}  
+
+.page-back { left: 24px; }  
+.page-forward { right: 24px; }  
+
+/* Center image */  
+.photo {  
+    width: 95%;  
+    height: 200px;  
+    max-width: 95%;  
+    min-width: 70%;  
+    margin: 5px auto;  
+    display: block;  
+    background: green;  
+    border-radius: 12px;  
+    border: 3px solid #000;  
+    
+}  
+ h2 {  
+     font:20px;  
+ }  
+.logo {  
+    margin-top: 25px;  
+    margin-bottom: 5px;   
+    width: 125px;  
+    height: auto;  
+    border-radius: 25%;  
+}  
+.link-devert {  
+    decoration:none;  
+    color:light-blue;  
+}  
+
+.text-style {  
+    font-family: 'Roboto', sans-serif;  
+    margin: 0 auto;  
+}  
+
+.btn {  
+    display: block;  
+    height:auto;  
+    width: 75%;  
+    max-width: 75%;  
+    margin: 10px auto;  
+    padding: 17px;  
+    background: #000;  
+    color: green;  
+    text-decoration: none;  
+    border-radius: 8px;  
+    font-size: 18px;  
+    border: 3px solid #000;  
+}  
+.align{
+  display:inline-flex;
+  margin:25px;
+}
+
+.btn.live {  
+    background: yellow;  
+    color: ;  
+    animation: pulse 1s infinite alternate;  
+}  
+
+@keyframes pulse {  
+    from { opacity: 0.75; }  
+    to { opacity: 1; }  
+}  
+/* Star button */
+
+#bookmarkBtn {
+font-size: 32px;
+cursor: pointer;
+color: gold ;
+transition: color 0.3s ease;
+  margin-right:5px;
+}
+#bookmarkBtn.active {
+color: gold;
+margin-right:5px;
+}
+
+/* Alert message */
+#bookmarkAlert {
+position: fixed;
+bottom: 30px;
+left: 50%;
+transform: translateX(-50%);
+background: blue;
+color: blue;
+padding: 12px 18px;
+border-radius: 8px;
+opacity: 0;
+pointer-events: none;
+font-size: 16px;
+transition: opacity 1s ease;
+}
+</style>
+
+</head> 
+<script>
+// ------------------------------------------------------------
+// 1. Load link array from Google Sheets (must be published as CSV)
+// ----------------------------------------------------
+async function loadLinks() {
+    const sheetURL = "";
+    const response = await fetch(sheetURL);
+    const text = await response.text();
+
+    let rows = text.trim().split("\n");
+    let links = rows.slice(1).map(r => r.split(",")[1]); 
+    // assumes column B contains page links
+    return links.filter(l => l && l.trim() !== "");
+}
+
+// ------------------------------------------------------------
+// 2. Swipe detection
+// ------------------------------------------------------------
+let startX = 0;
+let endX = 0;
+
+document.addEventListener("touchstart", e => {
+    startX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener("touchend", async e => {
+    endX = e.changedTouches[0].screenX;
+
+    const links = await loadLinks();
+    const currentURL = window.location.pathname.split("/").pop();
+    const index = links.findIndex(l => l.includes(currentURL));
+
+    if (index === -1) return; // current page not found
+
+    // swipe left → NEXT page
+    if (startX - endX > 40) {
+        const next = links[index + 1];
+        if (next) window.location.href = next;
+    }
+
+    // swipe right → PREVIOUS page
+    if (endX - startX > 40) {
+        const prev = links[index - 1];
+        if (prev) window.location.href = prev;
+    }
+});
+</script>
+<script>
+// ------------------------------------------------------------
+// 1. Load array "mainPages" from Google Sheets (CSV publish link)
+// ------------------------------------------------------------
+let mainPages = [];
+
+async function loadMainPages() {
+    const sheetURL = "";
+
+    const response = await fetch(sheetURL);
+    const text = await response.text();
+
+    // CSV rows → extract column B (page URLs)
+    const rows = text.trim().split("\n").slice(1);
+    mainPages = rows.map(r => r.split(",")[1]).filter(x => x);
+}
+
+// ------------------------------------------------------------
+// 2. Get FOLLOW COUNT from page
+//    This can be a hidden tag, div, or script value:
+//    <div id="followCount">3</div>
+// ------------------------------------------------------------
+function getFollowCount() {
+    const el = document.getElementById("followCount");
+    if (!el) return 0;
+    return parseInt(el.textContent.trim()) || 0;
+}
+
+// ------------------------------------------------------------
+// 3. Find current page index inside mainPages
+// ------------------------------------------------------------
+function getCurrentPageIndex() {
+    const current = window.location.pathname.split("/").pop();
+    return mainPages.findIndex(link => link.includes(current));
+}
+
+// ------------------------------------------------------------
+// 4. Navigation logic (based on followCount)
+// ------------------------------------------------------------
+function goToPage(offset) {
+    let index = getCurrentPageIndex();
+    const followCount = getFollowCount();
+
+    // Scroll offset multiplied by follow count
+    // Example: followCount=2 → next jumps 2 pages
+    const nextIndex = index + (offset * followCount);
+
+    if (nextIndex >= 0 && nextIndex < mainPages.length) {
+        window.location.href = mainPages[nextIndex];
+    }
+}
+
+// ------------------------------------------------------------
+// 5. Attach events to next/previous buttons
+// ------------------------------------------------------------
+document.getElementById("nextPage").addEventListener("click", () => {
+    goToPage(+1);
+});
+
+document.getElementById("prevPage").addEventListener("click", () => {
+    goToPage(-1);
+});
+
+// ------------------------------------------------------------
+// 6. Initialize system
+// ------------------------------------------------------------
+loadMainPages();
+</script>
+<body class="parent-element">  
+  <!-- Google Tag Manager (noscript) -->  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4DRRX2H"  
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  
+<!-- End Google Tag Manager (noscript) -->  
+<div class="content half">
+  <!-- Logo Section -->  
+<div>  
+  <a href=""><img src="" alt="" class="logo half"></img>  </a>
+    <h1 class="text-style"></h1>  
+</div>  
+<!-- Main Swipe Box -->  
+<div class="background" id="swipeArea">  
+    <div class="buffer">  
+    <!-- Corner Buttons -->  
+        
+<div id="main-page"></div>  
+      
+  
+       
+    </div>  
+    <!-- Center Display -->  
+    
+  <img style='position:relative; border-radius:10%; width:100%; max-width:300px; height:50%;' src="IMG_20251227_165601_703.webp"></img>  
+
+    <div id="pageText">  
+      <div class="align">
+    <div id="bookmarkBtn">   ★   </div>
+        <a class="profile-link"  href="">
+<!-- Star + Name Row -->
+    <div class="name-row">  
+    <h3 class="name-title">Controversy</h3>
+    </div>
+    </div>
+</div>  <!-- Fade Alert -->  <div id="bookmarkAlert"></div>  </a>  
+             <a href="">  
+                   <h3 id="showtimeDisplay" style="text-align:center; font-size:22px; margin:10px 0; font-weight:bold;"></h3> </a>  
+        </div>
+<div id="downline-container">  
+        
+     
+    </div>  
+</div>
+</div>  
+    <!-- Bottom Navigation Buttons -->  
+    <div style="margin:-25,auto,-25,auto;" >  
+      <a href="https://www.instagram.com/controversy2027?igsh=MWwzb3lwd2EycG9icg==" style="margin:-25,auto,-25,auto; color:rgb(255, 0, 255)" class="support btn half">Instagram</a>  
+      <a href="https://cash.app/$controversy2027" style="margin:-25,auto,-25,auto;" class="btn live link-devert half">CashApp</a>  
+    </div>  
+</div>  
+</body>  
+</html> 
+<script>  
+// Bookmark key per page  
+const bookmarkKey = "bookmark_" + window.location.href;  
+  
+// Elements  
+const star = document.getElementById("bookmarkBtn");  
+const alertBox = document.getElementById("bookmarkAlert");  
+  
+// Restore state  
+if (localStorage.getItem(bookmarkKey) === "true") {  
+    star.classList.add("active");  
+}  
+  
+// Show fading message  
+function showAlert(msg) {  
+    alertBox.innerText = msg;  
+    alertBox.style.opacity = "1";  
+    setTimeout(() => {  
+        alertBox.style.opacity = "0";  
+    }, 1500);  
+}  
+  
+// Toggle action  
+star.addEventListener("click", () => {  
+    const isBookmarked = star.classList.toggle("active");  
+  
+    // Save state  
+    localStorage.setItem(bookmarkKey, isBookmarked);  
+  
+    if (isBookmarked) {  
+        showAlert("⭐ Page saved! Add this page to your browser bookmarks.");  
+    } else {  
+        showAlert("❌ Bookmark removed.");  
+    }  
+});  
+</script>  
+<script>  
+    /* -------------------------------  
+   SHOWTIME SCHEDULER SYSTEM  
+--------------------------------*/  
+  
+const showtimes = [  
+    { day: "Monday", time: "", url: "" },  
+    { day: "Tuesday", time: "", url: "" },  
+    { day: "Wednesday", time: "", url: "" },  
+    { day: "Friday", time: "18:00", url: "" }, 
+    { day: "Thurday", time: "", url: "" },  
+    { day: "Saturday", time: "", url: "" },
+    { day: "Sunday", time: "", url: "" },
+     
+      
+];  
+  
+const showtimeDisplay = document.getElementById("showtimeDisplay");  
+  
+function getNextShowtime() {  
+    const now = new Date();  
+    const todayIndex = now.getDay(); // 0 = Sun ... 6 = Sat  
+  
+    let upcoming = null;  
+    let soonestDiff = Infinity;  
+  
+    for (let s of showtimes) {  
+        const dayIndex = [  
+            "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"  
+        ].indexOf(s.day);  
+  
+        let showDate = new Date();  
+        showDate.setHours(parseInt(s.time.split(":")[0]));  
+        showDate.setMinutes(parseInt(s.time.split(":")[1]));  
+        showDate.setSeconds(0);  
+  
+        // Adjust date to correct weekday  
+        const dayDiff = (dayIndex - todayIndex + 7) % 7;  
+        showDate.setDate(now.getDate() + dayDiff);  
+  
+        const diff = showDate - now;  
+  
+        if (diff > 0 && diff < soonestDiff) {  
+            soonestDiff = diff;  
+            upcoming = { ...s, date: showDate, diff };  
+        }  
+    }  
+  
+    return upcoming;  
+}  
+  
+function updateShowtime() {  
+    const s = getNextShowtime();  
+    if (!s) return;  
+  
+    const now = new Date();  
+    const diffMinutes = Math.floor((s.date - now) / 60000);  
+  
+    let output = "";  
+  
+    if (diffMinutes > 60) {  
+        // More than 1 hour away  
+        if (s.date.toDateString() === now.toDateString()) {  
+            output = `Showtime Today @ ${s.time}`;  
+        } else {  
+            output = `Showtime ${s.day} ${formatTime(s.time)}`;  
+        }  
+    }  
+    else if (diffMinutes > 15) {  
+        output = `Showtime in ${diffMinutes} minutes`;  
+    }  
+    else if (diffMinutes > 0) {  
+        // Within 15 minutes → allow entering the site  
+        output = `<a href="${s.url}" style="color:#00f; font-weight:bold;">Showtime in ${diffMinutes} minutes (Enter Site)</a>`;  
+    }  
+    else {  
+        // Showtime now  
+        output = `<a href="${s.url}" style="color:lime; font-weight:bold;">Online Now</a>`;  
+    }  
+  
+    showtimeDisplay.innerHTML = output;  
+}  
+  
+function formatTime(t) {  
+    let [h, m] = t.split(":");  
+    let hr = parseInt(h);  
+    const ampm = hr >= 12 ? "PM" : "AM";  
+    if (hr > 12) hr -= 12;  
+    return `${hr}:${m}${ampm}`;  
+}  
+  
+// Auto-update every 30 seconds  
+setInterval(updateShowtime, 30000);  
+updateShowtime();  
+</script>  
